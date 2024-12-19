@@ -1,0 +1,97 @@
+.container {
+    position: relative; /* 부모 요소의 기준점 설정 */
+    z-index: 1; /* 부모 요소의 z-index 명시적으로 설정 */
+}
+
+/* title */
+.pageTitle {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #1C1C1C;
+}
+
+/* form */
+.formSection {
+    margin: auto;
+    width: 300px;
+    /* background-color: aqua; */
+    position: absolute; /* 부모 컨테이너 기준으로 위치 설정 */
+    top: 42%;
+    left: 50%; /* 화면 너비의 50% */
+    transform: translate(-50%, -50%); /* 자기 자신 크기의 50%만큼 이동 */
+}
+
+.formbox1, .formbox2 {
+    text-align: left;
+}
+
+.formbox3 {
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-size: small;
+    text-align: center;
+}
+
+/* form - label */
+.formLabel1 , .formLabel2 {
+    font-weight: bold;
+    color: #1C1C1C;
+    margin-left: 5px;
+}
+
+/* form - input */
+.formCtrlId, .formCtrlPw {
+    width: 300px;
+    margin: auto;
+    border: 0.1px solid #535353;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.formCtrlId:focus, .formCtrlPw:focus {
+    border: 0.3px solid #007BFF;
+    outline: none;
+}
+
+/* login - submitBtn */
+button.formSumbitBtn {
+    margin-top: 16px;
+    width: 300px;
+    border: 2px solid #007BFF;
+    border-radius: 8px;
+    background-color: #007BFF;
+    padding: 7px;
+    color: #1C1C1C;
+    font-weight: bold;
+    cursor: pointer; /* 마우스 커서 표시 */
+    transition: all 0.3s ease; /* 부드러운 애니메이션 효과 */
+}
+
+button.formSumbitBtn:active  
+, button.formSumbitBtn.active{
+    transform: scale(0.98); /* 눌렀을 때 크기 살짝 줄이기 */
+}
+
+button.formSumbitBtn:focus,
+.formSumbitBtn:hover {
+    border:2px solid #1C1C1C;
+    background-color: #1C1C1C;
+    color: #007BFF;
+}
+
+/* pwFindbox */
+.pwFindbox {
+    
+}
+
+/* a Tag - pwFindTag */
+
+.pwFindTag {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+/* hr */
+hr.hrTag {
+    margin: 0.2rem 0;
+}

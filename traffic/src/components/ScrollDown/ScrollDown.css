@@ -1,0 +1,50 @@
+div.registerbox {
+    position: absolute;
+    left: 45%;
+    bottom: 50px;
+    transform: translateX(100%);
+    text-align: center;
+    border: 1px solid #007BFF;
+    border-radius: 10px;
+    width: 10%;
+    padding: 6px;
+}
+
+.registerbox:hover {
+    background-color: #007BFF;
+    a.registerTag {
+        color: #1C1C1C;
+        font-weight: 600;
+    }
+}
+
+a.registerTag {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.chevron:hover {
+    animation-play-state: paused; /* 애니메이션 정지 */
+}
+
+.chevron {
+    display: inline-block;
+    font-size: 18px;
+    color: #FF4081;
+    cursor: pointer;
+    animation: pulse 1.6s infinite;
+}
+
+/* 화살표 애니메이션 */
+@keyframes pulse {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px); /* 아래로 이동 */
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+ 
