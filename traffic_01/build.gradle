@@ -47,6 +47,8 @@ dependencies {
     implementation 'redis.clients:jedis:4.4.3'
     implementation 'org.apache.commons:commons-pool2:2.11.1'
 
+    implementation 'com.google.android.gms:play-services-auth:20.7.0' // Google 로그인
+
 }
 
 tasks.named('test') {
